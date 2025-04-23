@@ -29,7 +29,7 @@ A powerful and secure Laravel-based API to handle file uploads, sharing via down
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-org/file-upload-api.git
+git clone https://github.com/CyberLordX7/DocShare.git
 cd DocShare
 composer install
 cp .env.example .env
