@@ -18,8 +18,8 @@ A powerful and secure Laravel-based API to handle file uploads, sharing via down
 
 ## 🛠️ Technologies Used
 
-- **Laravel 10+**
-- **MySQL / PostgreSQL**
+- **Laravel **
+- **MySQL **
 - **Laravel Notifications (Mail, Database)**
 - **Laravel Queues**
 - **Blade Markdown Email Templates**
@@ -30,7 +30,7 @@ A powerful and secure Laravel-based API to handle file uploads, sharing via down
 
 ```bash
 git clone https://github.com/your-org/file-upload-api.git
-cd file-upload-api
+cd DocShare
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -39,26 +39,14 @@ php artisan key:generate
 Then configure your `.env`:
 
 ```dotenv
-APP_NAME=FileUpload
-APP_URL=http://localhost
-DB_CONNECTION=mysql
-DB_DATABASE=your_db
-DB_USERNAME=root
-DB_PASSWORD=secret
+Update the env.example with your configurations
 
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.mailtrap.io
-MAIL_PORT=2525
-MAIL_USERNAME=your_username
-MAIL_PASSWORD=your_password
-MAIL_FROM_ADDRESS="noreply@yourapp.com"
-MAIL_FROM_NAME="${APP_NAME}"
 ```
 
 Run migrations:
 
 ```bash
-php artisan migrate
+php artisan migrate:fresh --seed
 ```
 
 ---
