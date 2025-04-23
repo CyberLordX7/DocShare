@@ -49,30 +49,6 @@ Run migrations:
 php artisan migrate:fresh --seed
 ```
 
----
-
-## 📤 API Endpoints
-
-| Method | Endpoint                     | Description                        | Auth Required |
-|--------|------------------------------|------------------------------------|----------------|
-| POST   | `/api/upload`                | Upload files and create session    | ✅ Yes         |
-| GET    | `/api/download/{token}`      | Download shared files              | ❌ No          |
-| GET    | `/api/session/{id}`          | Get session details                | ✅ Yes         |
-| GET    | `/api/admin/uploads`         | Admin view of all uploads          | ✅ Admin       |
-
----
-
-## 📧 Notifications
-
-| Template              | Trigger                    | Recipient     |
-|-----------------------|----------------------------|---------------|
-| `email.uploaded`      | File uploaded (user)       | Uploader      |
-| `email.uploaded_admin`| File uploaded (admin view) | Admin/Team    |
-
-Customize templates in:
-```
-resources/views/email/
-```
 
 ---
 
@@ -85,7 +61,7 @@ php artisan test
 ---
 ---
 
-##  Postman Collection ![images](https://github.com/user-attachments/assets/3ddf350d-98e5-42ba-850e-2ce37b6d6a4f)
+## ![images](https://github.com/user-attachments/assets/3ddf350d-98e5-42ba-850e-2ce37b6d6a4f) Postman Collection 
 
 
 ```bash
